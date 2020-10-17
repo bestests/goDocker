@@ -18,7 +18,7 @@ func main() {
 	})
 
 	http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "HI~!!!")
+		fmt.Fprintf(w, "HI~~~!!!")
 	})
 
 	http.Handle("/test", http.FileServer(http.Dir("./views/test")))
